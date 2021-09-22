@@ -1,0 +1,1 @@
+En esta carpeta se encuentran los archivos crudos de las secuencias con las que vamos a trabajar
