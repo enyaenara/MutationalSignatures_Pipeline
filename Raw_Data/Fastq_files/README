@@ -1,0 +1,2 @@
+#En esta carpeta se guardaron las particiones generadas con fastq-dump de archivos SRA
+#Los archivos están en formato fatsq. Las terminaciones _1 corresponden al forward y _ al reverse
