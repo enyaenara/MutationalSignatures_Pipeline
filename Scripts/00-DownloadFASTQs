@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#Obtener archivos fastq del proyecto PRJNA191127 de exoma completo de individuos con AF y sus familiares
+SRA_list="../Project_Data/SRR_Fanconi_List.txt"
+SRA_dir="../Input-Files/SRA/"
+FASTQs="../Input-Files/FASTQs/"
+
+mkdir -p "$SRA_dir"
+
+# Iterar con for
+for srr_id in $(cat "$SRA_list")
+do
+
+echo "Descargando $srr_id..."
+    prefetch ${srr_id} -O ${SRA_dir}
+
+echo "Obtener Forward y Reverse"
+fastq-dump --outdir ${FASTQs} --split-files "${SRA_dir}${srr_id}/${srr_id}.sra"
+
+echo "Ya termine con el archivo ${srr_id}"
+
+done
