@@ -36,47 +36,6 @@ ref.SBS2020 <- as.data.frame(ref_SBS2020,header = TRUE,sep="\t")
 #Referencia que contiene columna como nombre de las filas
 cosmic.SBS2020 <- as.data.frame(tibble::column_to_rownames(ref.SBS2020),header = TRUE,sep="\t")
 
-# Determinar que firmas contribuyen a muestras normalizadas de linea celular
-sample_line1 = whichSignatures(tumor.ref = sigs.input.line, 
-                       signatures.ref = COSMIC.SBS2020, 
-                       sample.id = 1,
-                       contexts.needed = TRUE)
-
-sample_line2 = whichSignatures(tumor.ref = sigs.input.line, 
-                               signatures.ref = COSMIC.SBS2020, 
-                               sample.id = 2,
-                               contexts.needed = TRUE)
-
-sample_line3 = whichSignatures(tumor.ref = sigs.input.line, 
-                               signatures.ref = cosmic.SBS2020, 
-                               sample.id = 3,
-                               contexts.needed = TRUE)
-
-sample_line4 = whichSignatures(tumor.ref = sigs.input.line, 
-                               signatures.ref = cosmic.SBS2020, 
-                               sample.id = 4,
-                               contexts.needed = TRUE)
-
-#Obtener plots de las lineas celulares
-
-plotSignatures(sample_line1, sub = 'Linea celular PD20 RV corregida')
-
-plotSignatures(sample_line2, sub = 'Linea celular PD20 RV coregida')
-
-plotSignatures(sample_line3, sub = 'Linea celular PD20')
-
-plotSignatures(sample_line4, sub = 'Linea celular PD20')
-
-#Obtener gráfica pie
-
-makePie(sample_line1, sub = 'Linea celular PD20 RV corregida',add.color = "pink")
-
-makePie(sample_line2, sub = 'Linea celular PD20 RV coregida',add.color = "pink")
-
-makePie(sample_line3, sub = 'Linea celular PD20',add.color = "pink")
-
-makePie(sample_line4, sub = 'Linea celular PD20', add.color = "pink")
-
 # Determinar que firmas contribuyen a muestras normalizadas de casos índice
 
 sample_proband1 = whichSignatures(tumor.ref = sigs.input.probands, 
