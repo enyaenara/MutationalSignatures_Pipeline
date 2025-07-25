@@ -3,8 +3,7 @@
 #Script para generar las carpetas para todos los archivos
 #Corre este Script en la carpeta principal de tu proyecto
 
-
-mkdir -p Raw_Data/BED_files Raw_Data/Fastq_files
-mkdir -p Intermediate_files/BAM_files Intermediate_files/DuBAM_files Intermediate_files/FastQC/Before_T Intermediate_files/FastQC/After_T Intermediate_files/Filtered_Fastq Intermediate_files/gVCFs
-mkdir -p Results/TSV Results/VCFs Results/VCFs_bysample Results/VEP_bysample
+mkdir -p Input-Files/BEDs Input-Files/FASTQs
+mkdir -p Intermediate-Files/Filtered-FASTQs Intermediate-Files/BAMs Intermediate-Files/DedupsBAMs Intermediate-Files/Recalibration Intermediate-Files/FASTQC/Before_T Intermediate-Files/FASTQC/After_T
+mkdir -p Results/TSV Results/VCFs/VCF_tar Results/VCFs/VCF_unfiltered Results/VCFs/VCF_filtered Results/VCFs/VCF_table Results/VCFs/VCF_pass
 mkdir -p Scripts
