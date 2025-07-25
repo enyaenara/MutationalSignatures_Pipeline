@@ -14,3 +14,4 @@ cat SRR1EJEMPLO_pass.tsv >> All_probands_pass.tsv
 
 #Repetir con todos los archivos en el orden deseado (seguir los consecutivos 1,2...)
 
+#Existen herramientas alternativas para realizar este proceso como bcftools
