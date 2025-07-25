@@ -1,7 +1,8 @@
+# Acerca del proyecto
 #Autor: Enya Enara Martínez Torres
 #Fecha: 05-11-2021
 
-#Proyecto de firmas mutacionales para la deteccion en
+# Proyecto de firmas mutacionales para la deteccion en
 #secuencias de pacientes con anemia de Fanconi 
 #obtenidas de los proyectos PRJNA191127/SRP018947
 
